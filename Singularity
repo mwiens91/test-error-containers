@@ -6,4 +6,8 @@ MirrorURL: http://us.archive.ubuntu.com/ubuntu/
     error_raise.py /error_raise.py
 
 %post
+    apt-add-repository universe
+    apt-get update
+    apt-get install python
+
     cd /
